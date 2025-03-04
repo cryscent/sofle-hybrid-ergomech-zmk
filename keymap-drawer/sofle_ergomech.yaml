@@ -53,7 +53,7 @@ layers:
   - HOME
   - PAGE DOWN
   - {t: SPACE, h: raise}
-  - {t: ESC, h: adjust}
+  - {t: CAPS, h: adjust}
   - {t: ENTER, h: lower}
   - {t: BACKSPACE, h: raise}
   - (
