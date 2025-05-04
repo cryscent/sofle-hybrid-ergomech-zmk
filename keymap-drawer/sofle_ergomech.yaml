@@ -280,7 +280,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - HOME
+  - '&msc SCRL_LEFT'
   - '&mmv MOVE_UP'
   - END
   - {t: ▽, type: trans}
