@@ -279,10 +279,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
+  - '&msc SCRL_UP'
   - '&msc SCRL_LEFT'
   - '&mmv MOVE_UP'
-  - END
+  - '&msc SCRL_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -291,7 +291,7 @@ layers:
   - LALT
   - LCTRL
   - {t: ▽, type: trans}
-  - PG DN
+  - '&msc SCRL_DOWN'
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
