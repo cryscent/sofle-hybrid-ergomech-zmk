@@ -122,12 +122,12 @@
 
         layer_4 {
             bindings = <
-&trans      &trans     &trans     &trans    &trans     &trans  &trans     &trans          &trans          &trans           &trans  &trans
-&trans      &trans     &trans     &trans    &trans     &trans  &kp PG_UP  &msc SCRL_LEFT  &mmv MOVE_UP    &kp END          &trans  &trans
-&trans      &kp LSHFT  &sk LCMD   &kp LALT  &kp LCTRL  &trans  &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans      &trans     &mkp LCLK  &trans    &mkp RCLK  &trans  &trans     &mkp LCLK       &trans          &mkp RCLK        &trans  &trans
-&kp K_MENU  &trans     &trans     &trans    &trans     &trans  &trans     &trans          &trans          &trans           &trans
-                                                               &trans     &trans          &trans          &trans           &trans
+&trans      &trans     &trans     &trans    &trans     &trans  &trans          &trans          &trans          &trans           &trans  &trans
+&trans      &trans     &trans     &trans    &trans     &trans  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans  &trans
+&trans      &kp LSHFT  &sk LCMD   &kp LALT  &kp LCTRL  &trans  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans      &trans     &mkp LCLK  &trans    &mkp RCLK  &trans  &trans          &mkp LCLK       &trans          &mkp RCLK        &trans  &trans
+&kp K_MENU  &trans     &trans     &trans    &trans     &trans  &trans          &trans          &trans          &trans           &trans
+                                                               &trans          &trans          &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
