@@ -62,7 +62,7 @@ layers:
   - {t: RCMD, h: sticky}
   - ENTER
   - RIGHT
-  - UP ARROW
+  - UP
   - LEFT
   - DOWN
   lower:
@@ -258,7 +258,7 @@ layers:
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
+  - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   '4':
   - {t: ▽, type: trans}
