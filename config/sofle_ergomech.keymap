@@ -123,7 +123,7 @@
         layer_4 {
             bindings = <
 &trans      &trans     &trans     &trans    &trans     &trans  &trans     &trans          &trans          &trans           &trans  &trans
-&trans      &trans     &trans     &trans    &trans     &trans  &kp PG_UP  &kp HOME        &mmv MOVE_UP    &kp END          &trans  &trans
+&trans      &trans     &trans     &trans    &trans     &trans  &kp PG_UP  &msc SCRL_LEFT  &mmv MOVE_UP    &kp END          &trans  &trans
 &trans      &kp LSHFT  &sk LCMD   &kp LALT  &kp LCTRL  &trans  &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans      &trans     &mkp LCLK  &trans    &mkp RCLK  &trans  &trans     &mkp LCLK       &trans          &mkp RCLK        &trans  &trans
 &kp K_MENU  &trans     &trans     &trans    &trans     &trans  &trans     &trans          &trans          &trans           &trans
