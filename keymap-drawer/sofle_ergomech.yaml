@@ -32,10 +32,10 @@ layers:
   - {t: F, h: LCTRL}
   - G
   - H
-  - {t: J, h: RCTRL}
-  - {t: K, h: RALT}
-  - {t: L, h: RCMD}
-  - {t: ;, h: RSHIFT}
+  - {t: J, h: LCTRL}
+  - {t: K, h: LALT}
+  - {t: L, h: LCMD}
+  - {t: ;, h: LSHFT}
   - ''''
   - {t: ▽, type: trans}
   - Z
