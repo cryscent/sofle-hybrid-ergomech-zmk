@@ -37,7 +37,7 @@ layers:
   - {t: L, h: RCMD}
   - {t: ;, h: RSHIFT}
   - ''''
-  - INS
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -48,7 +48,7 @@ layers:
   - ','
   - .
   - /
-  - {t: RSHFT, h: sticky}
+  - {t: ▽, type: trans}
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,12 +119,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - TAB
+  - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
-  - {t: RCTRL, h: sticky}
-  - {t: RALT, h: sticky}
-  - {t: RMETA, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp MB1'
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
@@ -185,8 +185,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -239,17 +239,17 @@ layers:
   - ''
   - ''
   - LANG HANGEUL
-  - '&mkp LCLK'
   - LANG HANJA
-  - '&mkp RCLK'
+  - INS
+  - {t: ▽, type: trans}
   - ''
   - ''
   - SCROLLLOCK
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - ''
+  - SPACE
+  - TAB
   - {type: held}
   - ''
   - ''
