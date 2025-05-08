@@ -122,9 +122,9 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - LEFT ALT
+  - LCMD
   - '&mkp MB1'
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
@@ -156,10 +156,10 @@ layers:
   - F10
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LSHFT
-  - LCMD
-  - LALT
-  - RCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
   - F4
@@ -167,7 +167,7 @@ layers:
   - F6
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,18 +178,18 @@ layers:
   - F2
   - F3
   - F12
-  - {t: ▽, type: trans}
+  - LSHFT
   - BRI MIN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCMD
+  - LEFT ALT
+  - LCTRL
   - {t: ▽, type: trans}
   - {type: held}
   - ENTER
   - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LCTRL
+  - LEFT ALT
+  - LCMD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -243,7 +243,7 @@ layers:
   - INS
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - LSHFT
   - SCROLLLOCK
   - LCMD
   - LEFT ALT
@@ -252,9 +252,9 @@ layers:
   - SPACE
   - {type: held}
   - ''
-  - ''
-  - ''
-  - ''
+  - LCTRL
+  - LEFT ALT
+  - LCMD
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
   - '&mmv MOVE_UP'
