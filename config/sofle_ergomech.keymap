@@ -13,14 +13,6 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-
-
-&mmv {
-    time-to-max-speed-ms = <200>;
-    acceleration-exponent = <2>;
-};
-
 
 &mt {
     flavor = "balanced";
@@ -47,12 +39,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC     &kp N1       &kp N2      &kp N3      &kp N4       &kp N5       &kp N6       &kp N7           &kp N8      &kp N9      &kp N0          &kp DELETE
-&kp GRAVE   &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y        &kp U            &kp I       &kp O       &kp P           &kp BSLH
-&kp CAPS    &mt LSHFT A  &mt LCMD S  &mt LALT D  &mt LCTRL F  &kp G        &kp H        &mt LCTRL J      &mt LALT K  &mt LCMD L  &mt LSHFT SEMI  &kp SQT
-&trans      &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N        &kp M            &kp COMMA   &kp DOT     &kp FSLH        &trans
-&kp C_MUTE  &trans       &trans      &trans      &lt 1 TAB    &lt 2 SPACE  &lt 3 ENTER  &lt 4 BACKSPACE  &trans      &trans      &trans
-                                                                           &kp ENTER    &kp RIGHT        &kp UP      &kp LEFT    &kp DOWN
+&kp ESC     &kp N1    &kp N2        &kp N3     &kp N4     &kp N5       &kp N6       &kp N7           &kp N8     &kp N9    &kp N0         &kp DELETE
+&kp GRAVE   &kp Q     &kp W         &kp E      &kp R      &kp T        &kp Y        &kp U            &kp I      &kp O     &kp P          &kp BSLH
+&kp CAPS    &kp A     &kp S         &kp D      &kp F      &kp G        &kp H        &kp J            &kp K      &kp L     &kp SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z     &kp X         &kp C      &kp V      &kp B        &kp N        &kp M            &kp COMMA  &kp DOT   &kp FSLH       &kp LSHFT
+&kp C_MUTE  &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &lt 1 TAB  &lt 2 SPACE  &lt 3 ENTER  &lt 4 BACKSPACE  &kp LCTRL  &kp LALT  &kp LCMD
+                                                                       &kp ENTER    &kp RIGHT        &kp UP     &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings =
@@ -72,12 +64,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&studio_unlock  &kp F1     &kp F2    &kp F3    &kp F4     &kp F5    &kp F6     &kp F7           &kp F8        &kp F9          &kp F10         &kp F11
-&trans          &trans     &trans    &trans    &trans     &trans    &kp EQUAL  &kp N7           &kp N8        &kp N9          &kp N0          &kp F12
-&trans          &kp LSHFT  &kp LCMD  &kp LALT  &kp LCTRL  &kp LBKT  &kp RBKT   &kp N4           &kp N5        &kp N6          &kp STAR        &kp PLUS
-&trans          &trans     &trans    &trans    &trans     &kp LBRC  &kp RBRC   &kp N1           &kp N2        &kp N3          &kp SLASH       &kp MINUS
-&kp C_MUTE      &trans     &trans    &trans    &trans     &trans    &kp ENTER  &kp BACKSPACE    &trans        &trans          &trans
-                                                                    &mkp MB1   &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
+&studio_unlock  &kp F1    &kp F2        &kp F3     &kp F4  &kp F5    &kp F6     &kp F7           &kp F8        &kp F9          &kp F10         &kp F11
+&trans          &kp F10   &kp F7        &kp F8     &kp F9  &trans    &kp EQUAL  &kp N7           &kp N8        &kp N9          &kp N0          &kp F12
+&trans          &kp F11   &kp F4        &kp F5     &kp F6  &kp LBKT  &kp RBKT   &kp N4           &kp N5        &kp N6          &kp STAR        &kp PLUS
+&kp LSHFT       &kp F12   &kp F1        &kp F2     &kp F3  &kp LBRC  &kp RBRC   &kp N1           &kp N2        &kp N3          &kp SLASH       &kp MINUS
+&kp C_MUTE      &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &trans  &trans    &kp ENTER  &kp BACKSPACE    &trans        &trans          &trans
+                                                                     &mkp MB1   &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -117,12 +109,12 @@
 
             label = "adjust";
             bindings = <
-&trans          &trans     &trans    &trans    &trans     &trans     &none             &none            &none         &none           &none           &none
-&trans          &trans     &trans    &trans    &trans     &trans     &kp PG_UP         &kp HOME         &kp UP        &kp END         &none           &none
-&trans          &kp LSHFT  &kp LCMD  &kp LALT  &kp LCTRL  &trans     &kp PAGE_DOWN     &kp LEFT         &kp DOWN      &kp RIGHT       &none           &none
-&none           &none      &none     &none     &none      &none      &kp LANG_HANGEUL  &kp LANG_HANJA   &kp INS       &trans          &none           &none
-&kp SCROLLLOCK  &none      &none     &none     &kp TAB    &kp SPACE  &none             &none            &none         &none           &none
-                                                                     &mkp LCLK         &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
+&trans          &trans    &trans        &trans     &trans   &trans     &none             &none            &none         &none           &none           &none
+&trans          &trans    &trans        &trans     &trans   &trans     &kp PG_UP         &kp HOME         &kp UP        &kp END         &none           &none
+&trans          &trans    &trans        &trans     &trans   &trans     &kp PAGE_DOWN     &kp LEFT         &kp DOWN      &kp RIGHT       &none           &none
+&kp LSHIFT      &none     &none         &none      &none    &none      &kp LANG_HANGEUL  &kp LANG_HANJA   &kp INS       &trans          &none           &none
+&kp SCROLLLOCK  &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &kp TAB  &kp SPACE  &none             &none            &none         &none           &none
+                                                                       &mkp LCLK         &mmv MOVE_RIGHT  &mmv MOVE_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
@@ -130,16 +122,15 @@
 
         layer_4 {
             bindings = <
-&trans      &trans     &trans     &trans    &trans     &trans     &trans          &trans           &trans           &trans            &trans            &trans
-&trans      &trans     &trans     &trans    &trans     &trans     &msc SCRL_UP    &msc SCRL_LEFT   &mmv MOVE_UP     &msc SCRL_RIGHT   &trans            &trans
-&trans      &kp LSHFT  &sk LCMD   &kp LALT  &kp LCTRL  &trans     &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &mkp LCLK         &trans
-&trans      &trans     &mkp LCLK  &trans    &mkp RCLK  &trans     &trans          &mkp LCLK        &trans           &mkp RCLK         &trans            &trans
-&kp K_MENU  &trans     &trans     &trans    &kp TAB    &kp SPACE  &trans          &trans           &trans           &trans            &trans
-                                                                  &trans          &msc MOVE_Y(20)  &msc MOVE_X(20)  &msc MOVE_Y(-20)  &msc MOVE_X(-20)
+&trans      &trans    &trans        &trans     &trans     &trans     &trans          &trans           &trans           &trans            &trans            &trans
+&trans      &trans    &trans        &trans     &trans     &trans     &msc SCRL_UP    &msc SCRL_LEFT   &mmv MOVE_UP     &msc SCRL_RIGHT   &trans            &trans
+&trans      &trans    &trans        &trans     &trans     &trans     &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &mkp LCLK         &trans
+&kp LSHFT   &trans    &mkp LCLK     &trans     &mkp RCLK  &trans     &trans          &mkp LCLK        &trans           &mkp RCLK         &trans            &trans
+&kp K_MENU  &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &kp TAB    &kp SPACE  &trans          &trans           &trans           &trans            &trans
+                                                                     &trans          &msc MOVE_Y(20)  &msc MOVE_X(20)  &msc MOVE_Y(-20)  &msc MOVE_X(-20)
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
-
